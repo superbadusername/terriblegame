@@ -73,7 +73,7 @@ cookiesPerSecond();
 //Update Functions
 function Start(){
 	updateCookieText();
-	document.getElementById("cpc").innerHTML = "<b style=\"color:green;\">Biscuits per click: </b>" + amountPerClick;
+	document.getElementById("cpc").innerHTML = "<b style=\"color:green;\">Biscuits per bust: </b>" + amountPerClick;
 	cPerSec = (cursorEffect * cursorCount);
 	document.getElementById("cps").innerHTML = "<b style=\"color:green;\">Biscuits per second: </b>" + cPerSec;
 }
@@ -104,7 +104,7 @@ function updateCPSText(){
 }
 
 function updatePCText(){
-	document.getElementById("cpc").innerHTML = "<b style=\"color:green;\">Biscuits per click: </b>" + amountPerClick.toLocaleString();
+	document.getElementById("cpc").innerHTML = "<b style=\"color:green;\">Biscuits per bust: </b>" + amountPerClick.toLocaleString();
 }
 
 function calculateCPS(){
