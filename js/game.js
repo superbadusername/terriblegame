@@ -73,15 +73,15 @@ cookiesPerSecond();
 //Update Functions
 function Start(){
 	updateCookieText();
-	document.getElementById("cpc").innerHTML = "<b style=\"color:green;\">Cookies per click: </b>" + amountPerClick;
+	document.getElementById("cpc").innerHTML = "<b style=\"color:green;\">Biscuits per click: </b>" + amountPerClick;
 	cPerSec = (cursorEffect * cursorCount);
-	document.getElementById("cps").innerHTML = "<b style=\"color:green;\">Cookies per second: </b>" + cPerSec;
+	document.getElementById("cps").innerHTML = "<b style=\"color:green;\">Biscuits per second: </b>" + cPerSec;
 }
 
 function updateCookieText(){
 	var temp = round(cookies, 1);
 	document.getElementById("cookieText").innerHTML = temp.toLocaleString();
-	document.getElementById("title").innerHTML = "Cookie Clicker &bull; " + temp.toLocaleString();
+	document.getElementById("title").innerHTML = "Biscuit Buster &bull; " + temp.toLocaleString();
 	calculatePerClick();
 }
 
@@ -100,11 +100,11 @@ setInterval(cookiesPerSecond, 1000);
 
 function updateCPSText(){
 	calculateCPS();
-	document.getElementById("cps").innerHTML = "<b style=\"color:green;\">Cookies per second: </b>" + cPerSec.toLocaleString();
+	document.getElementById("cps").innerHTML = "<b style=\"color:green;\">Biscuits per second: </b>" + cPerSec.toLocaleString();
 }
 
 function updatePCText(){
-	document.getElementById("cpc").innerHTML = "<b style=\"color:green;\">Cookies per click: </b>" + amountPerClick.toLocaleString();
+	document.getElementById("cpc").innerHTML = "<b style=\"color:green;\">Biscuits per click: </b>" + amountPerClick.toLocaleString();
 }
 
 function calculateCPS(){
