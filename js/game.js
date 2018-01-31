@@ -100,7 +100,7 @@ function clicked(){
 	$("#cookieImage").animate({
 		height: '-=20px',
 		width: '-=20px',
-		"padding-top":"20px"
+		"padding-top":"10px"
 	}, 65)
 	cookies += amountPerClick;
 	updateCookieText();
