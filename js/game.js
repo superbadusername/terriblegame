@@ -86,6 +86,18 @@ function updateCookieText(){
 }
 
 function clicked(){
+	$("#cookieImage").stop(true,true)
+	$("#cookieImage").css({
+		
+	})
+	$("#cookieImage").animate({
+		height: '+=20px',
+		width: '+=20px'
+	}, 65)
+	$("#cookieImage").animate({
+		height: '-=20px',
+		width: '-=20px'
+	}, 65)
 	cookies += amountPerClick;
 	updateCookieText();
 }
