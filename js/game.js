@@ -88,7 +88,8 @@ function updateCookieText(){
 function clicked(){
 	$("#cookieImage").stop(true,true)
 	$("#cookieImage").css({
-		
+		"width":"269px",
+		"height":"257px"
 	})
 	$("#cookieImage").animate({
 		height: '+=20px',
