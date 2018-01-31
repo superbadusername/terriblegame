@@ -86,7 +86,7 @@ function updateCookieText(){
 }
 
 function clicked(){
-	$("#cookieImage").stop(true,true)
+	
 	$("#cookieImage").css({
 		
 	})
