@@ -89,15 +89,19 @@ function clicked(){
 	$("#cookieImage").stop(true,true)
 	$("#cookieImage").css({
 		"width":"269px",
-		"height":"257px"
+		"height":"257px",
 	})
 	$("#cookieImage").animate({
 		height: '+=20px',
-		width: '+=20px'
+		width: '+=20px',
+		'left': '-=20px',
+    		'top': '-=20px'
 	}, 65)
 	$("#cookieImage").animate({
 		height: '-=20px',
-		width: '-=20px'
+		width: '-=20px',
+		'left': '+=20px',
+    		'top': '+=20px'
 	}, 65)
 	cookies += amountPerClick;
 	updateCookieText();
