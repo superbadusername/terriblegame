@@ -95,12 +95,12 @@ function clicked(){
 	$("#cookieImage").animate({
 		height: '+=20px',
 		width: '+=20px',
-		padding-top: '0px'
+		"padding-top":"0px"
 	}, 65)
 	$("#cookieImage").animate({
 		height: '-=20px',
 		width: '-=20px',
-		padding-top: '20px'
+		"padding-top":"20px"
 	}, 65)
 	cookies += amountPerClick;
 	updateCookieText();
