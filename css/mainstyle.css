@@ -1,0 +1,202 @@
+body {margin:0;}
+
+#topBar {
+	text-align:center;
+	height:20px;
+	background: url(images/topbar.jpg) repeat-x bottom;
+	color:white;
+	padding-left:10px;
+	padding-top:4px;
+	padding-bottom:4px;
+	font-family:Arial;
+}
+
+P.exImport{
+	font-family:Calibri;
+	color:white;
+}
+
+DIV.importSave{
+	position:absolute;
+	text-align:center;
+	width:700px;
+	height:700px;
+	background-color:#000000;
+	top:50%;
+	left:50%;
+	margin-top:-380px;
+	margin-left:-350px;
+	border-radius:15px;
+}
+
+button.customButton{
+	display:inline-block;
+	outline:none;
+	padding:5px 50px;
+	text-align:center;
+	font-size:24px;
+	border-radius:5px;
+}
+
+button.importbutton {
+	outline:none;
+	color:white;
+	background-color:#008201;
+	border-color:#009302;
+	border-radius:4px;
+}
+
+button.exportbutton {
+	outline:none;
+	color:white;
+	background-color:#8c0000;
+	border-color:#a00000;
+	border-radius:4px;
+}
+
+textarea{
+	height:500px;
+	width:500px;
+	font-family:Calibri;
+	font-size:30px;
+}
+
+DIV.biscuitArea {
+	position:center;
+	text-align:center;
+	height:410px;
+}
+
+INPUT.padding {
+	
+}
+
+DIV.verticalGap {
+	height:15px;
+}
+
+input {
+	outline:none;
+}
+
+h1 {
+	padding-top:10px;
+	font-family:Calibri;
+	margin:0;
+}
+
+h3 {
+	padding-bottom:0;
+	margin:0;
+	font-family:Calibri;
+}
+
+h3.bottom {
+	padding-bottom:10px;
+}
+
+a {
+	color:lightblue;
+}
+
+hr {
+	border-width:2px;
+	border-color:#000000;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 300px;
+    padding-right:15px;
+}
+
+.column2 {
+    float: left;
+    width: 400px;
+}
+
+.column3 {
+    float: left;
+    width: 200px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+BUTTON.group {
+	padding-left:15px;
+	padding-right:15px;
+	clear:both;
+	font-size:17px;
+	display:block;
+	color:white;
+	margin-bottom:3px;
+	width:90%;
+	height:40px;
+	border-radius:5px;
+	background-color:#800020;
+	border:solid #6b001a;
+	outline:none;
+}
+
+BUTTON.selected {
+	opacity:0.5;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+p {
+	font-family:Calibri;
+	font-size:20px;
+	margin:0;
+}
+
+h2 {
+	font-family:Calibri;
+	margin:0;
+}
+BUTTON.buyButton {
+	display:inline-block;
+	width:100%;
+	height:32px;
+	font-size:16px;
+	outline:none;
+	text-align:left;
+}
+
+BUTTON.upgradeButton {
+	display:block;
+	outline:none;
+	margin-top:15px;
+	margin-left:25px;
+	margin-right:25px;
+	max-width:150px;
+	min-height:125px;
+	border-radius:10px;
+	background-color:#008201;
+	border:solid #015e00;
+}
+
+P.white {
+	padding:none;
+	margin:none;
+	color:white;
+	font-size:13px;
+}
+
+P.Info {
+	margin-top:25px;
+	margin-right:100px;
+	margin-left:100px;
+	margin-bottom:25px;
+}
