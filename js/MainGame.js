@@ -32,7 +32,7 @@ Biscuit.Upgrades=[ //FORMAT: Building it belongs to - has it or not - name - des
 ["Cursors","false","Reinforced Index Finger","Doubles cursor output and biscuits per bust",100,1],
 ["Cursors","false","Carpal Tunnel Prevention Cream","Doubles cursor output and biscuits per bust",500,1],
 ["Cursors","false","Ambidextrous","Doubles cursor output and biscuits per bust",10000,10],
-["Cursors","false","Thousand Fingers","The mouse and cursors gain +0.1per non-cursor building",100000,25],
+["Cursors","false","Thousand Fingers","The mouse and cursors gain +0.1 per non-cursor building",100000,25],
 ["Cursors","false","Million Fingers","The mouse and cursor gain +0.5 per non-cursor building",10000000,50],
 ["Cursors","false","Billion Fingers","The mouse and cursor gain +5 per non-cursor building",100000000,100],
 ["Cursors","false","Trillion Fingers","The mouse and cursor gain +50 per non-cursor building",1000000000,150],
@@ -600,20 +600,20 @@ Biscuit.CalculateBPS=function(){
 	Biscuit.CalculateCPS = false; //C for erm, count? 
 	console.log("Calculating BPS");
 	//Again can optimise this also but wouldn't save any lines cus its so short anyways
-	if (Biscuit.Upgrades[0][1] == "true" && Biscuit.Buildings[0][3] == 0.1) { Biscuit.Buildings[0][3] *= 2; Biscuit.UpdateShopMenu("Cursors"); }
-	if (Biscuit.Upgrades[1][1] == "true" && Biscuit.Buildings[0][3] == 0.2) { Biscuit.Buildings[0][3] *= 2; Biscuit.UpdateShopMenu("Cursors"); }
-	if (Biscuit.Upgrades[2][1] == "true" && Biscuit.Buildings[0][3] == 0.4) { Biscuit.Buildings[0][3] *= 2; Biscuit.UpdateShopMenu("Cursors"); }
-	//This is optimisable, I'll do it when I can be assedpulpOops 
-	if (Biscuit.Upgrades[3][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (0.1 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	if (Biscuit.Upgrades[4][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (0.5 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	if (Biscuit.Upgrades[5][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (5 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	if (Biscuit.Upgrades[6][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (50 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	if (Biscuit.Upgrades[7][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (500 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	if (Biscuit.Upgrades[8][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (5000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	if (Biscuit.Upgrades[9][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (50000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	if (Biscuit.Upgrades[10][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (500000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	if (Biscuit.Upgrades[11][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (5000000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])) ; }
-	Biscuit.biscuitsPerBust = Biscuit.Buildings[0][3] * 10;
+	if (Biscuit.Upgrades[0][1] == "true" && Biscuit.Buildings[0][3] == 0.1) { Biscuit.Buildings[0][3] *= 2; Biscuit.biscuitsPerBust *=2; Biscuit.UpdateShopMenu("Cursors"); }
+	if (Biscuit.Upgrades[1][1] == "true" && Biscuit.Buildings[0][3] == 0.2) { Biscuit.Buildings[0][3] *= 2; Biscuit.biscuitsPerBust *=2; Biscuit.UpdateShopMenu("Cursors"); }
+	if (Biscuit.Upgrades[2][1] == "true" && Biscuit.Buildings[0][3] == 0.4) { Biscuit.Buildings[0][3] *= 2; Biscuit.biscuitsPerBust *=2; Biscuit.UpdateShopMenu("Cursors"); }
+	//This is optimisable, I'll do it when I can be assed
+	if (Biscuit.Upgrades[3][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (0.1 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (0.1 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+	if (Biscuit.Upgrades[4][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (0.5 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (0.5 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+	if (Biscuit.Upgrades[5][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (5 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (5 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+	if (Biscuit.Upgrades[6][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (50 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (50 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+	if (Biscuit.Upgrades[7][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (500 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (500 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+	if (Biscuit.Upgrades[8][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (5000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (5000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+	if (Biscuit.Upgrades[9][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (50000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (50000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+	if (Biscuit.Upgrades[10][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (500000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (500000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+	if (Biscuit.Upgrades[11][1] == "true") { Biscuit.Buildings[0][3] = 0.8 + (5000000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1])); Biscuit.biscuitsPerBust =  8 + (5000000 * (Biscuit.buildingsOwned - Biscuit.Buildings[0][1]))}
+
 	//Grandmas
 	if (Biscuit.Upgrades[12][1] == "true" && Biscuit.Buildings[1][3] == 3) { Biscuit.Buildings[1][3] *= 2; Biscuit.UpdateShopMenu("Grandmas"); }
 	if (Biscuit.Upgrades[13][1] == "true" && Biscuit.Buildings[1][3] == 6) { Biscuit.Buildings[1][3] *= 2; Biscuit.UpdateShopMenu("Grandmas"); }
