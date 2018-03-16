@@ -292,11 +292,11 @@ Biscuit.Load=function(){
 }
 
 Biscuit.UpdateCookieDisplays=function(){
-	document.getElementById("windowTitle").innerHTML = "Biscuits &bull; " + Biscuit.FormatNumber(Biscuit.biscuits, 0, "normal")
+	document.getElementById("windowTitle").innerHTML = "Kenworthys &bull; " + Biscuit.FormatNumber(Biscuit.biscuits, 0, "normal")
 	document.getElementById("biscuitText").innerHTML = Biscuit.FormatNumber(Biscuit.biscuits, 0, "normal");
 	document.getElementById("biscuitPSText").innerHTML = "per second: " + Biscuit.FormatNumber(Biscuit.biscuitsPerSecond, 1, "ps");
 	document.getElementById("biscuitPBText").innerHTML = "per bust: " + Biscuit.FormatNumber(Biscuit.biscuitsPerBust, 1, "ps");
-	document.getElementById("StatsBlock").innerHTML = "Biscuits in bank: <b>"+Biscuit.FormatNumber(Biscuit.biscuits,0,"normal")+"</b><br/>Total Biscuit Clicks: <b>"+Biscuit.FormatNumber(Biscuit.biscuitClicks,0,"normal")+"</b><br/>Total Biscuits Spent: <b>"+Biscuit.FormatNumber(Biscuit.biscuitsSpent,0,"normal")+"</b><br/>Total Buildings Owned: <b>" + Biscuit.FormatNumber(Biscuit.buildingsOwned,0,"normal")+"</b><br/>All-Time Biscuit Count: <b>"+Biscuit.FormatNumber(Biscuit.biscuitsEarned,0,"normal")+"</b><br/>Total handmade biscuits: <b>"+Biscuit.FormatNumber(Biscuit.handmadeBiscuits,0,"normal")+"</b><br/>Total upgrades purchased: <b>" + Biscuit.FormatNumber(Biscuit.totalUpgrades,0,"normal") + "</b><br/>Amount of times \"Stop playing that biscuit game!\" has been said: <b>1,234,567</b>";
+	document.getElementById("StatsBlock").innerHTML = "Kenworthys in bank: <b>"+Biscuit.FormatNumber(Biscuit.biscuits,0,"normal")+"</b><br/>Total Biscuit Clicks: <b>"+Biscuit.FormatNumber(Biscuit.biscuitClicks,0,"normal")+"</b><br/>Total Biscuits Spent: <b>"+Biscuit.FormatNumber(Biscuit.biscuitsSpent,0,"normal")+"</b><br/>Total Buildings Owned: <b>" + Biscuit.FormatNumber(Biscuit.buildingsOwned,0,"normal")+"</b><br/>All-Time Biscuit Count: <b>"+Biscuit.FormatNumber(Biscuit.biscuitsEarned,0,"normal")+"</b><br/>Total handmade biscuits: <b>"+Biscuit.FormatNumber(Biscuit.handmadeBiscuits,0,"normal")+"</b><br/>Total upgrades purchased: <b>" + Biscuit.FormatNumber(Biscuit.totalUpgrades,0,"normal") + "</b><br/>Amount of times \"Stop playing that biscuit game!\" has been said: <b>1,234,567</b>";
 }
 
 Biscuit.GetLocalStorage=function(){
